@@ -1,0 +1,19 @@
+{
+  "name": "mevbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/main.js",
+    "account": "node src/account.js",
+    "encoder": "node src/encoder.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.1.3",
+    "node-cron": "^3.0.2",
+    "web3": "^1.10.0"
+  }
+}
