@@ -5,4 +5,18 @@ TokenAddress : 0xaecbf32347d8d107ff516051242550bde5dc9225
 PoolAddress: 0x6974168ea377a9bf85688e30f68b5c8e013baf6d
 SwapAddress: 0x9a489505a00cE272eAa5e07Dba6491314CaE3796
 
+Usage:
+export PRIVATE_KEY=<YOUR PRIVATE KEY>
+export WS_RPC=<YOUR WEBSOCKET RPC>
+
+Configuration: main.js
+
+```
+const THRESHOLD_AMOUNT = 1000000000000
+const INJECT_AMOUNT = 1000000
+const TOKEN_ADDRESS = "aecbf32347d8d107ff516051242550bde5dc9225"
+const PRIVATE_KEY = process.env.PRIVATE_KEY
+const SWAP_CONTRACT_ADDRESS = "0x9a489505a00cE272eAa5e07Dba6491314CaE3796"
+const WS_RPC = process.env.WS_RPC ```
+
 Author: nguyenvietdungcs52@gmail.com
