@@ -32,7 +32,7 @@ let subscription = web3.eth.subscribe('pendingTransactions', function(error, res
 
 subscription.on("data", function(tx) {
     web3.eth.getTransaction(tx, function(err, transaction) {
-        if (err == null && transaction["to"] == SWAP_CONTRACT_ADDRESS) {
+        if (err == null && transaction && transaction["to"] == SWAP_CONTRACT_ADDRESS) {
             console.log(" ------> New tx for buying token")
             let gasPrice = filter.isRelatedTx(transaction)
             if (gasPrice > 0) {

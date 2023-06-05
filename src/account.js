@@ -45,7 +45,6 @@ class SysAccount {
         };
         console.log("TxObject", txObject)
         
-
         const signedTransaction = await this.web3.eth.accounts.signTransaction(txObject, this.account["privateKey"]);
         const serializedTransaction = signedTransaction.rawTransaction;
 
